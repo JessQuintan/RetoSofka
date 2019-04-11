@@ -1,7 +1,7 @@
 function print(e) {
   let entrada = e.split(",");
   let repeticiciones = entrada[0];
-  let cifra = entrada[1];
+  let salida = entrada[1];
 
   let matriz1 = [
     [" ", " ", " ", " ", " "],
@@ -74,24 +74,15 @@ function print(e) {
     [" ", "-", "-", "-", " "]
   ];
 
-  let matrizes = [
-    matriz0,
-    matriz1,
-    matriz2,
-    matriz3,
-    matriz4,
-    matriz5,
-    matriz6,
-    matriz7,
-    matriz8,
-    matriz9
-  ];
-
-  for (let i = 0; i < 10; i++) {
-    for (let j = 0; j < 5; j++) {
-      console.log(matrizes[i][j].join(""));
+  for (let j = 0; j < repeticiciones; j++) {
+    for (let i = 0; i < 5; i++) {
+      console.log(
+        matriz1[i].join(""),
+        matriz2[i].join(""),
+        matriz3[i].join("")
+      );
     }
   }
 }
 
-print("2,123");
+print("3,123");
