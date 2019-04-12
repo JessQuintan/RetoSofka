@@ -25,14 +25,14 @@ function print(e) {
     [" ", "-", "-", "-", " "]
   ];
   let matriz4 = [
-    [" ", " ", " ", " ", ""],
+    [" ", " ", " ", " ", " "],
     ["|", " ", " ", " ", "|"],
     [" ", "-", "-", "-", " "],
     [" ", " ", " ", " ", "|"],
     [" ", " ", " ", " ", " "]
   ];
   let matriz5 = [
-    [" ", "-", "-", "-", ""],
+    [" ", "-", "-", "-", " "],
     ["|", " ", " ", " ", " "],
     [" ", "-", "-", "-", " "],
     [" ", " ", " ", " ", "|"],
@@ -74,15 +74,52 @@ function print(e) {
     [" ", "-", "-", "-", " "]
   ];
 
+  let numeros = salida.split("");
+
+  switch (numeros[0]) {
+    case "0":
+      Imprimir(repeticiciones, matriz0);
+      break;
+    case "1":
+      Imprimir(repeticiciones, matriz1);
+      break;
+    case "2":
+      Imprimir(repeticiciones, matriz2);
+      break;
+    case "3":
+      Imprimir(repeticiciones, matriz3);
+      break;
+    case "4":
+      Imprimir(repeticiciones, matriz4);
+      break;
+    case "5":
+      Imprimir(repeticiciones, matriz5);
+      break;
+    case "6":
+      Imprimir(repeticiciones, matriz6);
+      break;
+    case "7":
+      Imprimir(repeticiciones, matriz7);
+      break;
+    case "8":
+      Imprimir(repeticiciones, matriz8);
+      break;
+    case "9":
+      Imprimir(repeticiciones, matriz9);
+      break;
+    default:
+      console.log("Digite 0,0 para salir del programa");
+      break;
+  }
+}
+
+function Imprimir(repeticiciones, m1) {
   for (let j = 0; j < repeticiciones; j++) {
     for (let i = 0; i < 5; i++) {
-      console.log(
-        matriz1[i].join(""),
-        matriz2[i].join(""),
-        matriz3[i].join("")
-      );
+      console.log(m1[i].join(""));
     }
   }
 }
 
-print("3,123");
+print("2,123");
+print("2,456");
